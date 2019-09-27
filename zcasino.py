@@ -57,15 +57,15 @@ while continuer_partie:
 		print("Désolé! vous avez perdu votre mise")
 		argent -= sommeMise
 
-		if argent == 0:
-			print("Désolé! vous avez perdu votre tout votre argent!")
-			print("Aurevoir!")
-			break
+	if argent == 0:
+		print("Vous n'avez plus d'argent pour miser!")
+		print("Aurevoir!")
+		break
 
 
 	choix = input("Voulez-vous quitter?(o/n) : ")
 	if choix == "o" or choix == "O" :
-		print("Vous laissez la partie avec la somme de ", argent)
+		print("Vous laissez la partie avec la somme de ", argent, "$")
 		continuer_partie = False
 
 
