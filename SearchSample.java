@@ -1,7 +1,13 @@
 public class SearchSample {
 	public static void main(String[] args) {
 		int[][] list = {{1,13,5},{1,2,5},{2,7,2}};
-		int searchValue = 2;
+		int val = 2;
+		valueSearch(val, list);	
+	}
+
+
+	//Méthode retournant la valeur recherchée
+	public static void valueSearch(int searchValue, int[][] list){
 		int positionX = -1;
 		int positionY = -1;
 
