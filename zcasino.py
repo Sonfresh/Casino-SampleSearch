@@ -5,8 +5,17 @@ from math import ceil
 
 continuer_partie = True 
 
-#initialisation de l'argent
-argent = 500;
+#controle de l'argent saisi par l'utilisateur
+argent = -1;
+while argent < 100:
+	try:
+		argent = int(input("Veuillez indiquer votre argent de départ : "))
+	except ValueError:
+		print("La valeur saisi doit être un nombre")
+		continue
+
+	if argent < 100 :
+		print("L'argent indiqué doit être égal ou supérieur à 100")
 
 while continuer_partie:
 	numMise = -1
