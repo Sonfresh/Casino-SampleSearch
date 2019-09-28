@@ -65,7 +65,7 @@ while continuer_partie:
 
 	choix = input("Voulez-vous quitter?(o/n) : ")
 	if choix == "o" or choix == "O" :
-		print("Vous laissez la partie avec la somme de ", argent, "$")
+		print("Vous laissez la partie avec la somme de ", argent)
 		continuer_partie = False
 
 
